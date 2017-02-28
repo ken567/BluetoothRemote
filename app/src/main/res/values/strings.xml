@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Arduino Bluetooth Remote</string>
+    <string name="choose_mode">Choose Mode</string>
+    <string name="button_for_pick_up_bot">Button for Pick up Bot</string>
+    <string name="button_for_battle_bot">button for Battle Bot</string>
+    <string name="not_connected">Not Connected</string>
+    <string name="connectbutton">connectButton</string>
+    <string name="left_button">Left Button</string>
+    <string name="right_button">right button</string>
+</resources>

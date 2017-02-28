@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.web_appdev.arduinobluetoothremote.PickupBot">
+
+    <ImageButton
+        android:id="@+id/connectButton"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bluetooth"
+        android:contentDescription="@string/connectbutton" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/connectButton"
+        android:layout_marginBottom="30dp"
+        android:layout_toLeftOf="@+id/connectButton"
+        android:layout_toStartOf="@+id/connectButton"
+        android:text="@string/not_connected"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageButton
+        android:id="@+id/leftButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/textView"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"
+        android:background="@drawable/leftarrow"
+        android:contentDescription="@string/left_button" />
+
+    <ImageButton
+        android:id="@+id/rightButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@+id/leftButton"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/leftButton"
+        android:layout_toRightOf="@+id/leftButton"
+        android:background="@drawable/rightarrow"
+        android:contentDescription="@string/right_button" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/grab"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/imageButton2"
+        android:layout_toStartOf="@+id/imageButton2" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/ka"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/imageButton3"
+        android:layout_toEndOf="@+id/imageButton3" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/up"
+        android:layout_below="@+id/leftButton"
+        android:layout_alignLeft="@+id/leftButton"
+        android:layout_alignStart="@+id/leftButton"
+        android:layout_marginTop="30dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/down"
+        android:layout_alignTop="@+id/imageButton3"
+        android:layout_alignLeft="@+id/rightButton"
+        android:layout_alignStart="@+id/rightButton" />
+
+</RelativeLayout>
